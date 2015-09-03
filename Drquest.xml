@@ -149,7 +149,7 @@
                       <block type="oled_cleardisplay" id="193">
                         <next>
                           <block type="oled_drawtext" id="184">
-                            <field name="TEXT">You are</field>
+                            <field name="TEXT">You are </field>
                             <next>
                               <block type="oled_drawnumber" id="208" inline="true">
                                 <value name="NUMBER">
