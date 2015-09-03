@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="57" inline="true" x="42" y="11">
+  <block type="variables_set" id="57" inline="true" x="-14" y="26">
     <field name="VAR">age</field>
     <value name="VALUE">
       <block type="math_number" id="64">
@@ -145,6 +145,24 @@
                         </next>
                       </block>
                     </statement>
+                    <next>
+                      <block type="oled_cleardisplay" id="193">
+                        <next>
+                          <block type="oled_drawtext" id="184">
+                            <field name="TEXT">You are</field>
+                            <next>
+                              <block type="oled_drawnumber" id="208" inline="true">
+                                <value name="NUMBER">
+                                  <block type="variables_get" id="212">
+                                    <field name="VAR">age</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
